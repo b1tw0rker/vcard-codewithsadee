@@ -1,0 +1,20 @@
+{
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+
+  "prettier.printWidth": 210,
+  "prettier.tabWidth": 6,
+  "prettier.singleQuote": true,
+
+  "editor.fontFamily": "\"Fira Code\", Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": false,
+  "editor.fontSize": 13,
+
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "editor.snippetSuggestions": "top",
+  "emmet.extensionsPath": [".\\.vscode"],
+
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true
+}
