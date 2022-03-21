@@ -20,7 +20,8 @@
 
             <button class="info_more-btn" (click)="toggle(sideBar);" data-sidebar-btn>
                 <span>Show Contacts</span>
-                <!-- <ion-icon name="chevron-down"></ion-icon> -->
+                <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+                <!--  <ion-icon name="chevron-down"></ion-icon> -->
             </button>
 
         </div>
@@ -130,28 +131,27 @@
         <!--
         - #NAVBAR
       -->
-        <!-- <app-navigation></app-navigation> -->
         <nav class="navbar">
             <ul class="navbar-list">
 
                 <li class="navbar-item">
-                    <button class="navbar-link active" (click)="navlnk(about)" data-nav-link>About</button>
+                    <button class="navbar-link active" (click)="navlnk(about, $event)" data-nav-link>About</button>
                 </li>
 
                 <li class="navbar-item">
-                    <button class="navbar-link" (click)="navlnk(resume)" data-nav-link>Resume</button>
+                    <button class="navbar-link" (click)="navlnk(resume, $event)" data-nav-link>Resume</button>
                 </li>
 
                 <li class="navbar-item">
-                    <button class="navbar-link" data-nav-link>Portfolio</button>
+                    <button class="navbar-link" (click)="navlnk(portfolio, $event)" data-nav-link>Portfolio</button>
                 </li>
 
                 <li class="navbar-item">
-                    <button class="navbar-link" data-nav-link>Blog</button>
+                    <button class="navbar-link" (click)="navlnk(blog, $event)" data-nav-link>Blog</button>
                 </li>
 
                 <li class="navbar-item">
-                    <button class="navbar-link" data-nav-link>Contact</button>
+                    <button class="navbar-link" (click)="navlnk(contact, $event)" data-nav-link>Contact</button>
                 </li>
 
             </ul>
@@ -665,7 +665,7 @@
         - #PORTFOLIO
       -->
 
-        <article class="portfolio" data-page="portfolio">
+        <article #portfolio class="portfolio" data-page="portfolio">
 
             <header>
                 <h2 class="h2 article-title">Portfolio</h2>
@@ -905,7 +905,7 @@
         - #BLOG
       -->
 
-        <article class="blog" data-page="blog">
+        <article #blog class="blog" data-page="blog">
 
             <header>
                 <h2 class="h2 article-title">Blog</h2>
@@ -1097,7 +1097,7 @@
         - #CONTACT
       -->
 
-        <article class="contact" data-page="contact">
+        <article #contact class="contact" data-page="contact">
 
             <header>
                 <h2 class="h2 article-title">Contact</h2>
