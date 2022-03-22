@@ -1,11 +1,16 @@
 # vcard-codewithsadee
 
 This project is a fork to Angular from codewithsadee very cool personal portfolio page.
+
 See Original Post here: https://dev.to/codewithsadee/how-to-build-personal-portfolio-using-html-css-javascript-37e2
+
 See Saddee's Original Project here: https://github.com/codewithsadee/vcard-personal-portfolio
+
 Maybe someone will find it useful.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
+
+Clone project and run `npm install`
 
 ## Development server
 
