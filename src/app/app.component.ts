@@ -8,8 +8,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  //title = 'virtualx';
   response: any;
+  title = 'vcard Personal portfolio';
   constructor(private http: HttpClient) {}
   //httpOptions for posting data
   private readonly httpOptions = {
@@ -60,22 +60,18 @@ export class AppComponent {
    */
 
   onSubmit(): void {
-    // Formulardata
-    // https://stackoverflow.com/questions/51382568/sending-post-data-to-php-using-angular-5
     var email = this.submitForm.value.email;
     var fullname = this.submitForm.value.fullname;
     var msg = this.submitForm.value.message;
     console.log(email);
     console.log(fullname);
-    let url = 'https://www.ing-x.de/contact.php';
+    let url = '/contact.php';
     let data = 'usermail=' + email + '&username=' + fullname + '&msg=' + msg;
     //prettier-ignore
     this.http.post(url, JSON.stringify(data), this.httpOptions).subscribe((response) => (this.response = response));
 
-    this.submitForm.reset(); // erzeugt auch ein console.log mit leerem formularinhalt
+    this.submitForm.reset();
     this.submitForm.disabled;
-
-    //$('*[data-txt="btn001"]').text('DONE');
   }
 
   /**
@@ -106,14 +102,14 @@ export class AppComponent {
   navlnk(page: any, event: any) {
     const navigationLinks = document.querySelectorAll('[data-nav-link]');
     const pages = document.querySelectorAll('[data-page]');
-    window.scrollTo(0, 0); // Scroll TOP
+    window.scrollTo(0, 0); // scrol to top
 
     for (let i = 0; i < navigationLinks.length; i++) {
-      navigationLinks[i].classList.remove('active'); // Remove Active css statement auf allen Button
+      navigationLinks[i].classList.remove('active'); // Remove 'active' css statement from all btn's
       pages[i].classList.remove('active');
     }
 
     event.target.classList.add('active'); // Add class 'active' to button
-    page.classList.add('active'); // setzt  Page 'active' des geklickten button
+    page.classList.add('active'); // set page 'active' clicked btn
   }
 }

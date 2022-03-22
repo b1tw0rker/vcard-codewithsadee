@@ -5,7 +5,7 @@
  * VARS
  * 
  */
-$receiver = 'service@host-x.de';
+$receiver = 'your@email.com';
 $subject = 'contact request';
 
 
