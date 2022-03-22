@@ -10,7 +10,7 @@ Maybe someone will find it useful.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
 
-Clone project and run `npm install`
+Clone project and run `npm install` in the project folder.
 
 ## Development server
 
