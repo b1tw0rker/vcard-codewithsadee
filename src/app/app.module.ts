@@ -12,6 +12,7 @@ import { MatIconModule } from '@angular/material/icon';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    // import HttpClientModule after BrowserModule.
     HttpClientModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
